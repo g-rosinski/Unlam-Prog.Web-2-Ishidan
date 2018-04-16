@@ -1,0 +1,152 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	border:none;
+	list-style: none;
+	text-decoration: none;
+	color: rgba(120,120,120);
+}
+/*####### Style___logo-header ########*/
+.logo-header{
+	display: block;
+	width: 100%;
+	height: 110px;
+	background-color: #1e1e1e;
+}
+.logo-img{
+	margin: 8px 0 8px 10px;
+}
+/*####### Style___nav ########*/
+nav
+{
+	background-color: #f86500;
+}
+.nav-item .nav-link{
+	color: #fff;
+}
+/*####### Style___home ########*/
+.welcome, .login{
+	padding-top: 30px;
+}
+h2,p>a{
+	color: #f86500;
+}
+/*####### Style___home___welcome ########*/
+.welcome h2::after{
+	content: "";
+    display: block;
+    width: 100%;
+    background-color: #cbcbcb;
+    height: 1px;
+}
+.welcome .pregunta{
+	max-height: 47px;
+	background-image: url(../img/fondobarra.png);
+	background-size: 120% 100%;
+	background-repeat: repeat-x;
+}
+.welcome .pregunta .img_pregunta{
+	display: inline-block;
+	background-image: url(../img/pregunta.png);	
+	background-repeat: no-repeat;
+	width: 52px;
+	height: 47px;
+}
+.welcome .pregunta p{
+	display: inline;
+	line-height: 47px;
+	vertical-align: top;
+}
+/*####### Style___home___login ########*/
+.login sub{
+	bottom: 0;
+}
+.login button{
+	position: relative;
+	left: 50%;
+	margin-left:-62.5px;
+}
+.login .form{
+	box-sizing: border-box;
+	background-color: #f9f9f9;
+	border: 1px solid #b7b7b7;
+	padding: 30px;
+}
+/*####### Style___shop ########*/
+.shop{
+	margin-top: 50px;
+}
+.shop .card-deck{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.shop .card-deck .card{
+	flex-grow: 1;
+	border-radius: 0;
+	border:solid 1px black;
+}
+.shop .card-deck .card img{
+	height: 150px;
+}
+.shop .card-deck .card .card-body{
+	background-color: #363738;
+	padding: 0.50em;
+	padding-right: 2px;
+}
+.shop .card-deck .card .card-body .card-title{
+	color: #fff;
+	margin: 0;
+	font-size: 1em;
+}
+
+/*####### Style___footer ########*/
+footer{
+	display: flex;
+ 	align-items: stretch;
+	width: 100%;
+}
+footer > button{
+  width: 30px;
+  border: none;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  outline: none;
+  
+  &:hover{
+    opacity: 1;
+  }
+}
+.sucursales{
+	flex: 1;
+  	overflow: hidden;
+}
+.sucursal{
+	list-style-type: none;
+	white-space: nowrap;
+	font-size: 0;
+	line-height: 0;
+	transition: transform 1s ease-in-out;
+}
+.infoSucursal{
+	padding: 30px 20px;
+	display: inline-block;
+	width: 100%;
+	height: 250px;
+	font-size: 25px;
+	letter-spacing: -0.03em;
+	line-height: 1;
+	font-weight: bold;
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+	  
+	&:nth-child(2) {
+	  color: #fff;
+  }
+}
+.nombreDeSucursal{
+	color: #f86500;
+}
