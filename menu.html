@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
+	<meta name="author" content="Gonzalo Rosinski"/>
+	<meta name="reply-to" content="gonzarosinski@gmail.com">
+	<meta name="description" content="Trabajo Practico 1 de Programacion Web 2"/>
+
+	<title>TP1 - Ishidan | Mi Pedido</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/main_menu.css">
+
+</head>
+<body>
+	<header class="logo-header">
+		<div class="container">
+			<img class="logo-img" src="img/logoishidan.png">
+		</div>
+	</header>
+	<nav>
+		<div class="container">
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">INICIO</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#">MENÚ</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">SUCURSALES</a>
+				</li>
+			</ul>			
+		</div>	
+		
+	</nav>
+
+	<div class="container menuContent">
+		
+	<div class="boxMenu">
+	<h2>MENÚ</h2><!-- 
+ <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div> -->
+	<div id="accordion">
+
+	  <div class="card">
+	    <div class="card-header" id="headingOne">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link" data-toggle="collapse" data-target="#rubroMaki" aria-expanded="true" aria-controls="rubroMaki">
+	          MAKI
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="rubroMaki" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+	      <div class="card-body">
+	        <ul class="rubro">
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$23.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$40.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$28.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$50.00</h3>
+	        	</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <div class="card-header" id="headingTwo">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroGeishas" aria-expanded="false" aria-controls="rubroGeishas">
+	          GEISHAS
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="rubroGeishas" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+	      <div class="card-body">
+	        <ul class="rubro">
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$23.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$40.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$28.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$50.00</h3>
+	        	</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <div class="card-header" id="headingThree">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroRolls" aria-expanded="false" aria-controls="rubroRolls">
+	          ROLLS
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="rubroRolls" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+	      <div class="card-body">
+	        <ul class="rubro">
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$23.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$40.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$28.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$50.00</h3>
+	        	</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <div class="card-header" id="headingFour">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroNiguiri" aria-expanded="false" aria-controls="rubroNiguiri">
+	          NIGUIRI
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="rubroNiguiri" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+	      <div class="card-body">
+	        <ul class="rubro">
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$23.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$40.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$28.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$50.00</h3>
+	        	</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <div class="card-header" id="headingFive">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroSashimi" aria-expanded="false" aria-controls="rubroSashimi">
+	          SASHIMI
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="rubroSashimi" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+	      <div class="card-body">
+	        <ul class="rubro">
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$23.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$40.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$28.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$50.00</h3>
+	        	</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <div class="card-header" id="headingSix">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroCombinados" aria-expanded="false" aria-controls="rubroCombinados">
+	          COMBINADOS
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="rubroCombinados" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+	      <div class="card-body">
+	        <ul class="rubro">
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$23.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$40.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$28.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$50.00</h3>
+	        	</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <div class="card-header" id="headingSeven">
+	      <h5 class="mb-0">
+	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroAppYEns" aria-expanded="false" aria-controls="rubroAppYEns">
+	          APPETIZERS Y ENSALADAS
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="rubroAppYEns" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+	      <div class="card-body">
+	        <ul class="rubro">
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$23.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$40.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">5 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$28.00</h3>
+	        	</li>
+	        	<li class="producto">
+	        		<a class="detalle" href="#">
+		        		<h3 class="nombreProducto">Smoked Geishas</h3>
+		        		<p class="unidades">10 unidades</p>
+		        		<p class="descripcion">
+		        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+		        		</p>
+	        		</a>
+	        		<h3 class="precio">$50.00</h3>
+	        	</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+
+     </div>	<!-- FIN ACCORDION-- >	
+	</div> 	<!-- FIN MENU-- >	
+		<aside>
+			<div class="boxPedido">
+				<h2>MI PEDIDO</h2>
+
+			</div>
+			<div class="boxSugerencias">
+				<h2>SUGERENCIAS</h2>
+			</div>	
+		</aside>
+		
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--	<script src="js/bootstrap.min.js"></script>
+ 	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.collapse').collapse()
+
+		});
+	</script> -->
+
+
+</body>
+</html>

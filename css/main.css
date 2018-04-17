@@ -31,6 +31,9 @@ nav
 .nav-item .nav-link{
 	color: #fff;
 }
+.nav-item .active{
+	background-color: #202020;
+}
 /*####### Style___home ########*/
 .welcome, .login{
 	padding-top: 30px;
