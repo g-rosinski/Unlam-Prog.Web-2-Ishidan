@@ -52,7 +52,8 @@ h2,p>a{
 	flex-wrap: nowrap;
 }
 .boxMenu{
-	flex-flow: 1 1 80%;
+	flex-grow: 1;
+	margin-right: 50px;
 }
 aside{
 	display: -webkit-flex;
@@ -71,6 +72,90 @@ aside{
 	flex-grow: 1;
 }
 
+/*####### Style___Menu ########*/
+.card-header{
+	padding: 0;
+}
+.card-header .mb-0 .btn-link{
+	color: #963e01;
+	font-size: 17px;
+}
+.card-body{
+	padding: 0;
+}
+.producto{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.producto:nth-child(even){
+	background-color: #eaeaea;
+}
+.producto a.detalle:hover{
+	text-decoration: none;
+}
+.producto:hover{
+	background-color: #d2d2d2;
+	/*Transisitons */
+	-webkit-transition: background-color 300ms ease-in-out;
+	-moz-transition: background-color 300ms ease-in-out;
+	-ms-transition: background-color 300ms ease-in-out;
+	-o-transition: background-color 300ms ease-in-out;
+	transition: background-color 300ms ease-in-out;	
+}
+.producto .detalle .nombreProducto,
+.producto .detalle .unidades{
+	display: inline;
+	color: black;
+}
+.producto .detalle .nombreProducto{
+	font-size: 18px;
+	font-weight: 600;
+	color: #f86500;
+}
+.producto .detalle .descripcion{
+	font-size: 14px;
+	color: #5f5f5f;
+}
+.producto .precio{
+	text-align: right;
+	font-size: 14px;
+	margin-left: 15px;
+}
+/*####### Style___shop ########*/
+
+.boxSugerencias .card-deck{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 400px;
+	margin: 0;
+}
+.boxSugerencias .card-deck .card{
+	flex-grow: 1;
+	border-radius: 0;
+	border:solid 1px black;
+	margin: 0;
+}
+.boxSugerencias .card-deck .card img{
+	height: 150px;
+	width: 225px;
+}
+.boxSugerencias .card-deck .card .card-body{
+	background-color: #363738;
+	padding: 0.50em;
+	padding-right: 2px;
+}
+.boxSugerencias .card-deck .card .card-body .card-title{
+	color: #fff;
+	margin: 0;
+	font-size: 1em;
+}
+
 /*####### Style___@media_query ########*/
 
 @media screen and (max-width: 1200px) {
@@ -85,6 +170,21 @@ aside{
 @media screen and (max-width: 991px) {
 	.home h2{
 		font-size: 26px;
+	}
+	.menuContent{
+		flex-direction: column;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+	}
+	.boxSugerencias .card-deck{
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+		width: 800px;
+		margin-top: 50px;
+	}
+	.boxSugerencias .card-deck .card{
+		margin: 5px;
 	}
 
 }
