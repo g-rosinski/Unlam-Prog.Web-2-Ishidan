@@ -73,12 +73,40 @@ aside{
 }
 
 /*####### Style___Menu ########*/
+.card{
+	border-radius: 0;
+}
 .card-header{
 	padding: 0;
 }
 .card-header .mb-0 .btn-link{
 	color: #963e01;
 	font-size: 17px;
+}
+.arrow-right{
+	position: relative;
+	display: inline-block;
+	background-image: url(../img/caret-right.svg);
+	background-size: 10px 23px;
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 25px;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	margin-right: 10px;
+	top:5px;
+}
+
+.card-header .mb-0 .collapsed .arrow-right{
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+
 }
 .card-body{
 	padding: 0;
@@ -105,6 +133,14 @@ aside{
 	-o-transition: background-color 300ms ease-in-out;
 	transition: background-color 300ms ease-in-out;	
 }
+.producto:hover .precio{
+	color: #f86500;
+	-webkit-transition: background-color 100ms ease-in-out;
+	-moz-transition: background-color 100ms ease-in-out;
+	-ms-transition: background-color 100ms ease-in-out;
+	-o-transition: background-color 100ms ease-in-out;
+	transition: background-color 100ms ease-in-out;	
+}
 .producto .detalle .nombreProducto,
 .producto .detalle .unidades{
 	display: inline;
@@ -122,10 +158,78 @@ aside{
 .producto .precio{
 	text-align: right;
 	font-size: 14px;
+	font-weight: 700;
 	margin-left: 15px;
 }
-/*####### Style___shop ########*/
+/*####### Style___Pedido ########*/
+.boxPedido{
+	flex-grow: 1;
+}
+.boxPedido .carroPedido{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	border: 1px solid #cfcfcf;
 
+}
+.boxPedido .carroPedido span.barTop{
+	background-color: #eaeaea;
+	height: 45px;
+	width: 100%;
+	display: block;
+}
+.boxPedido .carroPedido .totalesPedido,
+.boxPedido .carroPedido .msjPedido{
+	border-top: 1px solid #cfcfcf;
+	flex-grow: 1;
+	padding: 15px;
+}
+.boxPedido .carroPedido .totalesPedido{
+	background-color: #d1d1d1;
+}
+.boxPedido .carroPedido .totalesPedido label{
+	display: inline-block;
+	width: 82%;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 600;
+	color: #505050;
+}
+.boxPedido .carroPedido .totalesPedido input{
+	display: inline-block;
+	width: 16%;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 600;
+	color: #505050;
+	padding: 0 5px 2px 1px;
+	border-radius: 1px;
+	background-color: #eceaea;
+}
+.boxPedido .carroPedido .totalesPedido button{
+	border-radius: 9px;
+	border: 1px solid #b6b6b6;
+	padding: 5px 17px;
+	font-weight: 600;
+	text-align: center;
+	color: #505050;
+}
+.boxPedido .carroPedido .msjPedido{
+	background-color: #f9f9f9;
+}
+.boxPedido .carroPedido .msjPedido p {
+	color: #f86500;
+}
+/*####### Style___Sugerencias ########*/
+
+.boxSugerencias {
+	margin-top: 30px;
+}
 .boxSugerencias .card-deck{
 	display: flex;
 	flex-direction: column;
@@ -176,11 +280,28 @@ aside{
 		justify-content: flex-start;
 		flex-wrap: nowrap;
 	}
+	.boxMenu{
+		margin: 0;
+	}
+	aside{
+		width: auto;
+	}
+	aside h2{
+		text-align: center;
+	}
+	.boxPedido .carroPedido{
+		margin: 20px 45px;
+	}
+	.boxPedido .carroPedido .totalesPedido button {
+		padding: 7px 20px;
+		width: 74%;
+		margin: 20px 13% 0;
+	}
 	.boxSugerencias .card-deck{
 		flex-wrap: wrap;
 		align-content: center;
 		justify-content: center;
-		width: 800px;
+		width: 100%;
 		margin-top: 50px;
 	}
 	.boxSugerencias .card-deck .card{

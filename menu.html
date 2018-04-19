@@ -9,9 +9,8 @@
 	<meta name="description" content="Trabajo Practico 1 de Programacion Web 2"/>
 
 	<title>TP1 - Ishidan | Mi Pedido</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"> -->
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="css/main_menu.css">
 
 </head>
@@ -49,6 +48,7 @@
 	    <div class="card-header" id="headingOne">
 	      <h5 class="mb-0">
 	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroMaki" aria-expanded="false" aria-controls="rubroMaki">
+	        	<i class="arrow-right"></i>
 	          MAKI
 	        </button>
 	      </h5>
@@ -104,12 +104,13 @@
 	  <div class="card">
 	    <div class="card-header" id="headingTwo">
 	      <h5 class="mb-0">
-	        <button class="btn btn-link" data-toggle="collapse" data-target="#rubroGeishas" aria-expanded="true" aria-controls="rubroGeishas">
+	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroGeishas" aria-expanded="false" aria-controls="rubroGeishas">
+	        	<i class="arrow-right"></i>
 	          GEISHAS
 	        </button>
 	      </h5>
 	    </div>
-	    <div id="rubroGeishas" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+	    <div id="rubroGeishas" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 	      <div class="card-body">
 	        <ul class="rubro">
 	        	<li class="producto">
@@ -161,6 +162,7 @@
 	    <div class="card-header" id="headingThree">
 	      <h5 class="mb-0">
 	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroRolls" aria-expanded="false" aria-controls="rubroRolls">
+	        	<i class="arrow-right"></i>
 	          ROLLS
 	        </button>
 	      </h5>
@@ -217,6 +219,7 @@
 	    <div class="card-header" id="headingFour">
 	      <h5 class="mb-0">
 	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroNiguiri" aria-expanded="false" aria-controls="rubroNiguiri">
+	        	<i class="arrow-right"></i>
 	          NIGUIRI
 	        </button>
 	      </h5>
@@ -273,6 +276,7 @@
 	    <div class="card-header" id="headingFive">
 	      <h5 class="mb-0">
 	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroSashimi" aria-expanded="false" aria-controls="rubroSashimi">
+	        	<i class="arrow-right"></i>
 	          SASHIMI
 	        </button>
 	      </h5>
@@ -329,6 +333,7 @@
 	    <div class="card-header" id="headingSix">
 	      <h5 class="mb-0">
 	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroCombinados" aria-expanded="false" aria-controls="rubroCombinados">
+	        	<i class="arrow-right"></i>
 	          COMBINADOS
 	        </button>
 	      </h5>
@@ -385,6 +390,7 @@
 	    <div class="card-header" id="headingSeven">
 	      <h5 class="mb-0">
 	        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#rubroAppYEns" aria-expanded="false" aria-controls="rubroAppYEns">
+	        	<i class="arrow-right"></i>
 	          APPETIZERS Y ENSALADAS
 	        </button>
 	      </h5>
@@ -443,7 +449,25 @@
 	<aside>
 		<div class="boxPedido">
 			<h2>MI PEDIDO</h2>
-
+			<div class="carroPedido">
+				<span class="barTop"></span>
+				<div class="totalesPedido">
+					<label>
+						TOTAL $
+					</label>
+					<input type="text" name="total" value="0.00">
+					<label>
+						ABONA CON $
+					</label>
+					<input type="text" name="abonaCon" value="0.00">
+					<button>CONFIRMAR</button>
+				</div>
+				<div class="msjPedido">
+					<p>
+						Una vez que confirme el pedido, se le pedirán los datos necesarios para realizar el envío.
+					</p>
+				</div>
+			</div>
 		</div>
 		<div class="boxSugerencias">
 			<h2>SUGERENCIAS</h2>
@@ -478,18 +502,10 @@
 		
 	</div>
 
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
- 	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.collapse').collapse()
-
-		});
-	</script>
-
+	<script type="text/javascript" src="js/jquery-3.3.1.slim..min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

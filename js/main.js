@@ -1,7 +1,10 @@
 		$(document).ready(function(){
 			$('.carousel').carousel({
 			  interval: 4000
-			})
+			});
+
+			$('.collapse').collapse();
+
 			if ($( window ).width() <767){
 				$('.container').addClass('container-fluid');
 				$('.container-fluid').removeClass('container');
